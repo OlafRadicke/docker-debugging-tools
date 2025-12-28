@@ -14,7 +14,7 @@ RUN dnf install -y \
 RUN useradd -u 1500 -m debugger
 
 # Kleines Bash-Skript, das den Container am Leben hält
-RUN echo '#!/usr/bin/env bash\nwhile true; do sleep 3600; done' > /usr/local/bin/keepalive.sh \
+RUN printf '#!/usr/bin/env bash\nwhile true; do sleep 3600; done' > /usr/local/bin/keepalive.sh \
 	&& chmod +x /usr/local/bin/keepalive.sh \
 	&& chown debugger:debugger /usr/local/bin/keepalive.sh
 
