@@ -1,5 +1,5 @@
-name: Build an multi stage alpine image for prod
-run-name: ${{ github.actor }} build multi stage alpine image for prod.
+name: Build an Docker image with debugging tools
+run-name: ${{ github.actor }} build version {{  github.ref_name }}....
 on:
   push:
     tags:
