@@ -3,6 +3,7 @@ FROM fedora:42
 
 # Pakete installieren
 RUN dnf install -y \
+	bash \
 	curl \
 	wget \
 	postgresql \
