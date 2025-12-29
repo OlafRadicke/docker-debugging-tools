@@ -6,6 +6,7 @@ RUN dnf install -y \
 	bash \
 	curl \
 	wget \
+	git \
 	postgresql \
 	traceroute \
 	&& dnf clean all
